@@ -143,7 +143,7 @@
             //  Get playlist url from url if any
             var urlParams = new URLSearchParams(window.location.search);
             var playlistParam = urlParams.get('playlist');
-            if (playlistParam != "https://twciptv.github.io/TWC-IPTV.m3u") {
+            if (playlistParam != null) {
                 localStorage.setItem("m3uPlaylistURL", playlistParam);
             }
 
@@ -168,7 +168,7 @@
                 fetch(m3uURL)
                     .then(response => response.text())
                     .then(data => {
-                        videoPlayer.innerHTML = ''; // Clear the video player
+                        videoPlayer.innerHTML = 'https://twciptv.github.io/TWC-IPTV.m3u'; // Clear the video player
                         clearPlaylist(); // clear channel list
 
                         const parsedPlaylist = parseM3U(data);
