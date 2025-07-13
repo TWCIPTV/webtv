@@ -309,7 +309,7 @@
   #arlinablock{background:rgba(0,0,0,0.65);position:fixed;margin:auto;left:0;right:0;top:0;bottom:0;overflow:auto;z-index:999999;animation:fadeInDown 1s}#arlinablock .header{margin:0 0 15px}#arlinablock .inner{background:#E74C3C;color:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);text-align:center;width:600px;padding:40px;border-radius:5px;margin:7% auto 2%;animation:rubberBand 1s}#arlinablock button{padding:10px 20px;border:0;background:rgba(0,0,0,0.15);color:#fff;margin:20px 5px;cursor:pointer;transition:all .3s}#arlinablock button:hover{background:rgba(0,0,0,0.35);color:#fff;outline:none}#arlinablock button.active,#arlinablock button:hover.active{background:#fff;color:#222;outline:none}#arlinablock .fixblock{background:#fff;text-align:left;color:#000;padding:20px;height:250px;overflow:auto;line-height:30px}#arlinablock .fixblock div{display:none}#arlinablock .fixblock div.active{display:block}#arlinablock ol{margin-left:20px}@media(max-width:768px){#arlinablock .inner{width:calc(100% - 20px);margin:10px auto;padding:15px}}
   </style>
 
-	</head>
+</head>
   <script type='text/javascript' src='//eltontry.com/09/f1/e9/09f1e956c711aea6a898d5abbb78d092.js'></script>
 
 <body>
@@ -327,7 +327,179 @@
           Join us on Telegram
       </a>
     </header>
-    <body>
-	    <iframe width="560" height="315" src="https://twciptv.github.io/iptvplayer.html?file=https://twciptv.github.io/Webtvmysg.m3u8" title="IPTV Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+ <div id="ad-container">
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
+</div>
 
-    </body>body>
+<script>
+  $(document).ready(function() {
+    setInterval(function() {
+      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
+    }, 10000); // Refresh every 30 seconds
+  });
+</script>
+	 
+
+	 
+</div>
+    <div class="container">
+
+	    <iframe width="560" height="315" src="https://twciptv.github.io/iptvplayer.html?file=https://twciptv.github.io/Webtvmysg.m3u8" title="IPTV Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+        </div>
+
+	    
+ <div class="container">
+	 
+ <script type="text/javascript">
+	atOptions = {
+		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
+	 
+	 
+</div>
+
+        <!-- add here -->
+
+        <script>
+            // Function to store the selected group in localStorage
+            function saveSelectedGroup(selectedGroup) {
+                localStorage.setItem('selectedGroup', selectedGroup);
+            }
+
+            // Function to retrieve the stored selected group from localStorage
+            function getStoredSelectedGroup() {
+                return localStorage.getItem('selectedGroup');
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                // Show loading screen
+                const loadingScreen = document.getElementById('loading-screen');
+                loadingScreen.style.display = 'flex';
+
+                // Update the progress bar width
+                const loadingBar = document.getElementById('loading-bar');
+                loadingBar.style.width = '100%';
+
+                // Hide loading screen after a delay (adjust as needed)
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                }, 1000); // 1000 milliseconds = 1 second
+
+                // Check if there is a stored selected group
+                const storedSelectedGroup = getStoredSelectedGroup();
+                if (storedSelectedGroup) {
+                    // Set the selected group in the dropdown
+                    const selectElement = document.getElementById('channel-dropdown');
+                    selectElement.value = storedSelectedGroup;
+
+                    // Trigger the changeChannelGroup function with the stored value
+                    changeChannelGroup();
+                } else {
+                    // Trigger the changeChannelGroup function with the default value
+                    changeChannelGroup();
+                }
+            });
+
+            function searchChannels() {
+                const input = document.getElementById('channel-search').value.toLowerCase();
+                const allSiteCards = document.querySelectorAll('.site-card');
+
+                allSiteCards.forEach(card => {
+                    const channelName = card.querySelector('.site-info h2').innerText.toLowerCase();
+                    const displayStyle = channelName.includes(input) ? 'flex' : 'none';
+                    card.style.display = displayStyle;
+                });
+
+                // Show all genre-specific channel grids
+                const genreGrids = document.querySelectorAll('.site-grid');
+                genreGrids.forEach(grid => {
+                    grid.style.display = 'grid';
+                });
+            }
+
+            function changeChannelGroup() {
+                const selectElement = document.getElementById('channel-dropdown');
+                const selectedGroup = selectElement.options[selectElement.selectedIndex].value;
+
+                // Save the selected group to localStorage
+                saveSelectedGroup(selectedGroup);
+
+                // Hide all genre-specific channel grids
+                const genreGrids = document.querySelectorAll('.site-grid');
+                genreGrids.forEach(grid => {
+                    grid.style.display = 'none';
+                });
+
+                // Show the selected genre-specific channel grid
+                const selectedGrid = document.getElementById(`${selectedGroup}-channels`);
+                if (selectedGrid) {
+                    selectedGrid.style.display = 'grid';
+                }
+            }
+        </script>
+
+      <script type='text/javascript'>
+      //<![CDATA[
+      // Say Hi to Adblock
+      function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+      //]]>
+      </script>
+
+	      <!-- ADS -->
+	    <div id="ad-container">
+  
+	    <script type="text/javascript">
+	atOptions = {
+		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
+</div>
+
+<script>
+  $(document).ready(function() {
+    setInterval(function() {
+      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
+    }, 10000); // Refresh every 30 seconds
+  });
+</script>
+
+	    
+	   <div id="ad-container">
+ <script type='text/javascript' src='//pl27009078.profitableratecpm.com/b4/2d/6e/b42d6e172b3efd865c138926b97c86f5.js'></script>
+</div>
+
+<script>
+  $(document).ready(function() {
+    setInterval(function() {
+      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
+    }, 10000); // Refresh every 30 seconds
+  });
+</script> 
+	    
+	   
+	    
+
+</body>
+    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
