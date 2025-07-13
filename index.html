@@ -104,94 +104,6 @@
             box-sizing: border-box;
         }
 
-        .site-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            /* Adjusted grid size */
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .site-card {
-            background-color: #444;
-            border: 1px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-            text-decoration: none;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            max-width: 150px;
-            /* Set a maximum width for the site card */
-            margin: auto;
-            /* Center the site card within its container */
-        }
-
-        .site-card:hover {
-            transform: scale(1.05);
-        }
-
-        .site-card img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-bottom: 1px solid #333;
-        }
-
-        .site-info {
-            padding: 10px;
-            /* Reduce padding for the site info */
-            text-align: center;
-            flex-grow: 1;
-        }
-
-        .site-info h2 {
-            font-size: 0.9em;
-            /* Adjust the font size for the channel name (h2) */
-            margin: 0;
-        }
-
-        .site-link {
-            margin-top: 10px;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: #3498db;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .site-link:hover {
-            background-color: #2c3e50;
-            color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .github-button {
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #fff;
-            background-color: #4CAF50;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .github-button:hover {
-            background-color: #45a049;
-        }
-
-        .github-icon {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-        }
-
         .telegram-button {
             display: inline-flex;
             align-items: center;
@@ -217,88 +129,30 @@
             width: 30px;
             height: 30px;
             margin-right: 10px;
+        }   
+    </style>
+	 /* Iframe style */
+<style type="text/css">
+        html {
+            overflow: auto;
         }
-
-        /* Modern Search Bar Styles */
-
-        .search-bar-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 70%;
-            /* Adjusted width for better visibility on small screens */
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-            border-radius: 20px;
-            /* Add border-radius for a curved end */
-        }
-
-        #channel-search {
-            padding: 10px;
+        
+        html,
+        body,
+        div,
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
             border: none;
-            /* Remove border to create a seamless appearance */
-            border-radius: 20px;
-            /* Match the border-radius of the container */
-            width: 70%;
-            /* Adjusted width for better visibility on small screens */
-            font-size: 16px;
-            transition: background-color 0.3s ease, color 0.3s ease;
         }
-
-        #channel-search:focus {
-            outline: none;
-            background-color: #eee;
-            /* Change background color when focused */
-        }
-
-        #search-btn {
-            background-color: #3498db;
-            color: #ffffff;
+        
+        iframe {
+            display: block;
+            width: 100%;
             border: none;
-            cursor: pointer;
-            border-radius: 20px;
-            /* Add border-radius to the search button */
-            padding: 10px 20px;
-            /* Add padding to the search button */
-            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        #search-btn:hover {
-            background-color: #2c3e50;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        #search-icon {
-            font-size: 20px;
-            color: #3498db;
-            transition: color 0.3s ease;
-        }
-
-        /* Media Query for Small Screens */
-
-        @media only screen and (max-width: 600px) {
-            .site-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            #channel-search {
-                width: 60%;
-                /* Adjusted width for small screens */
-            }
-            #search-btn {
-                width: 30%;
-                /* Adjusted width for small screens */
-            }
-            #search-bar {
-                align-items: stretch;
-                /* Align items vertically to stretch the search bar */
-            }
-            #channel-search {
-                width: 60%;
-                /* Make the input full width */
-                margin-bottom: 0;
-                /* Remove margin at the bottom */
-            }
+            overflow-y: auto;
+            overflow-x: hidden;
         }
     </style>
   <style type='text/css'>
@@ -329,9 +183,7 @@
 	    
 
     </header>
-<iframe style="border: 0; width: 100%; height: 100%" src="https://twciptv.github.io/iptvplayer.html?file=https://twciptv.github.io/Webtvmysg.m3u8" title="IPTV Player" allowfullscreen></iframe>
-	
- <div id="ad-container">
+	 <div id="ad-container">
  <script type="text/javascript">
 	atOptions = {
 		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
@@ -343,18 +195,24 @@
 </script>
 <script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
 </div>
+
+
+	
+<iframe 
+	src="https://twciptv.github.io/iptvplayer.html?file=https://twciptv.github.io/Webtvmysg.m3u8" 
+	title="IPTV Player" frameborder="0" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" 
+            scrolling="auto">
+  </iframe>
+	
+
+	
  <!-- add here -->
 
         <script>
-            // Function to store the selected group in localStorage
-            function saveSelectedGroup(selectedGroup) {
-                localStorage.setItem('selectedGroup', selectedGroup);
-            }
-
-            // Function to retrieve the stored selected group from localStorage
-            function getStoredSelectedGroup() {
-                return localStorage.getItem('selectedGroup');
-            }
 
             document.addEventListener("DOMContentLoaded", function() {
                 // Show loading screen
@@ -370,57 +228,6 @@
                     loadingScreen.style.display = 'none';
                 }, 1000); // 1000 milliseconds = 1 second
 
-                // Check if there is a stored selected group
-                const storedSelectedGroup = getStoredSelectedGroup();
-                if (storedSelectedGroup) {
-                    // Set the selected group in the dropdown
-                    const selectElement = document.getElementById('channel-dropdown');
-                    selectElement.value = storedSelectedGroup;
-
-                    // Trigger the changeChannelGroup function with the stored value
-                    changeChannelGroup();
-                } else {
-                    // Trigger the changeChannelGroup function with the default value
-                    changeChannelGroup();
-                }
-            });
-
-            function searchChannels() {
-                const input = document.getElementById('channel-search').value.toLowerCase();
-                const allSiteCards = document.querySelectorAll('.site-card');
-
-                allSiteCards.forEach(card => {
-                    const channelName = card.querySelector('.site-info h2').innerText.toLowerCase();
-                    const displayStyle = channelName.includes(input) ? 'flex' : 'none';
-                    card.style.display = displayStyle;
-                });
-
-                // Show all genre-specific channel grids
-                const genreGrids = document.querySelectorAll('.site-grid');
-                genreGrids.forEach(grid => {
-                    grid.style.display = 'grid';
-                });
-            }
-
-            function changeChannelGroup() {
-                const selectElement = document.getElementById('channel-dropdown');
-                const selectedGroup = selectElement.options[selectElement.selectedIndex].value;
-
-                // Save the selected group to localStorage
-                saveSelectedGroup(selectedGroup);
-
-                // Hide all genre-specific channel grids
-                const genreGrids = document.querySelectorAll('.site-grid');
-                genreGrids.forEach(grid => {
-                    grid.style.display = 'none';
-                });
-
-                // Show the selected genre-specific channel grid
-                const selectedGrid = document.getElementById(`${selectedGroup}-channels`);
-                if (selectedGrid) {
-                    selectedGrid.style.display = 'grid';
-                }
-            }
         </script>
 
       <script type='text/javascript'>
@@ -452,14 +259,7 @@
     }, 10000); // Refresh every 30 seconds
   });
 </script>
-	
-   <script>
-  $(document).ready(function() {
-    setInterval(function() {
-      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
-    }, 10000); // Refresh every 30 seconds
-  });
-</script>
+
 	
 </body>
     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
