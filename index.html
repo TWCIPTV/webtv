@@ -344,120 +344,6 @@
 <script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
 </div>
 
-<script>
-  $(document).ready(function() {
-    setInterval(function() {
-      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
-    }, 10000); // Refresh every 30 seconds
-  });
-</script>
-	 
-		
-
-
-	    
- <div class="container">
-	 
- <script type="text/javascript">
-	atOptions = {
-		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
-	 
-	 
-</div>
-
-        <!-- add here -->
-
-        <script>
-            // Function to store the selected group in localStorage
-            function saveSelectedGroup(selectedGroup) {
-                localStorage.setItem('selectedGroup', selectedGroup);
-            }
-
-            // Function to retrieve the stored selected group from localStorage
-            function getStoredSelectedGroup() {
-                return localStorage.getItem('selectedGroup');
-            }
-
-            document.addEventListener("DOMContentLoaded", function() {
-                // Show loading screen
-                const loadingScreen = document.getElementById('loading-screen');
-                loadingScreen.style.display = 'flex';
-
-                // Update the progress bar width
-                const loadingBar = document.getElementById('loading-bar');
-                loadingBar.style.width = '100%';
-
-                // Hide loading screen after a delay (adjust as needed)
-                setTimeout(function() {
-                    loadingScreen.style.display = 'none';
-                }, 1000); // 1000 milliseconds = 1 second
-
-                // Check if there is a stored selected group
-                const storedSelectedGroup = getStoredSelectedGroup();
-                if (storedSelectedGroup) {
-                    // Set the selected group in the dropdown
-                    const selectElement = document.getElementById('channel-dropdown');
-                    selectElement.value = storedSelectedGroup;
-
-                    // Trigger the changeChannelGroup function with the stored value
-                    changeChannelGroup();
-                } else {
-                    // Trigger the changeChannelGroup function with the default value
-                    changeChannelGroup();
-                }
-            });
-
-            function searchChannels() {
-                const input = document.getElementById('channel-search').value.toLowerCase();
-                const allSiteCards = document.querySelectorAll('.site-card');
-
-                allSiteCards.forEach(card => {
-                    const channelName = card.querySelector('.site-info h2').innerText.toLowerCase();
-                    const displayStyle = channelName.includes(input) ? 'flex' : 'none';
-                    card.style.display = displayStyle;
-                });
-
-                // Show all genre-specific channel grids
-                const genreGrids = document.querySelectorAll('.site-grid');
-                genreGrids.forEach(grid => {
-                    grid.style.display = 'grid';
-                });
-            }
-
-            function changeChannelGroup() {
-                const selectElement = document.getElementById('channel-dropdown');
-                const selectedGroup = selectElement.options[selectElement.selectedIndex].value;
-
-                // Save the selected group to localStorage
-                saveSelectedGroup(selectedGroup);
-
-                // Hide all genre-specific channel grids
-                const genreGrids = document.querySelectorAll('.site-grid');
-                genreGrids.forEach(grid => {
-                    grid.style.display = 'none';
-                });
-
-                // Show the selected genre-specific channel grid
-                const selectedGrid = document.getElementById(`${selectedGroup}-channels`);
-                if (selectedGrid) {
-                    selectedGrid.style.display = 'grid';
-                }
-            }
-        </script>
-
-      <script type='text/javascript'>
-      //<![CDATA[
-      // Say Hi to Adblock
-      function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
-      //]]>
-      </script>
 
 	      <!-- ADS -->
 	    <div id="ad-container">
@@ -481,22 +367,14 @@
     }, 10000); // Refresh every 30 seconds
   });
 </script>
-
-	    
-	   <div id="ad-container">
- <script type='text/javascript' src='//pl27009078.profitableratecpm.com/b4/2d/6e/b42d6e172b3efd865c138926b97c86f5.js'></script>
-</div>
-
-<script>
+	
+   <script>
   $(document).ready(function() {
     setInterval(function() {
       $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
     }, 10000); // Refresh every 30 seconds
   });
-</script> 
-	    
-	   
-	    
-
+</script>
+	
 </body>
     <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
