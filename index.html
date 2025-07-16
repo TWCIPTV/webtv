@@ -64,7 +64,7 @@
             color: #ffffff;
             padding: 1em 0;
             box-sizing: border-box;
-            font-size: 2em;
+            font-size: 1em;
             border-bottom: 2px solid #444;
             margin-bottom: 20px;
         }
@@ -270,7 +270,7 @@
 <script>
   $(document).ready(function() {
     setInterval(function() {
-      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
+      $("ad-container").load(location.href + " ad-container > *"); // Reloads content of #ad-container
     }, 10000); // Refresh every 30 seconds
   });
 </script>
