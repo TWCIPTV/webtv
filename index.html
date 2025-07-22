@@ -163,8 +163,14 @@
             overflow-y: auto;
             overflow-x: hidden;
         }
-
-    </style>
+#ad-container720X90 {
+      width: 720px;
+      height: 90px;
+      border: 0px solid #ccc;
+      margin: 0px auto;
+      text-align: center;
+      }
+	
     </style>
  
 
@@ -194,24 +200,31 @@
           <img src="https://cdn.jsdelivr.net/gh/KratosRepo/picx-images-hosting@master/20240104/Telegram_logo.svg.4prhaum59ki0.webp" alt="Telegram" class="telegram-icon">
           Join us on Telegram
       </a>
-	    <div id="ad-container">
- <script type='text/javascript' src='//pl27009078.profitableratecpm.com/b4/2d/6e/b42d6e172b3efd865c138926b97c86f5.js'></script>
-</div>
-
     </header>
 	
-<div id="ad-container">
- <script type='text/javascript' src='//pl27009078.profitableratecpm.com/b4/2d/6e/b42d6e172b3efd865c138926b97c86f5.js'></script>
-</div>
+<div id="ad-container720X90">
+    Loading ad...
+  </div>
 
-<script>
-  $(document).ready(function() {
-    setInterval(function() {
-      $("#ad-container").load(location.href + " #ad-container > *"); // Reloads content of #ad-container
-    }, 10000); // Refresh every 30 seconds
-  });
-</script> 
+  <script>
+    function loadAd() {
+      const adContainer = document.getElementById('ad-container720X90');
 
+      // Simulate loading an ad from a server or ad network
+      // Replace the below with an actual ad fetch call if needed
+      const timestamp = new Date().toLocaleTimeString();
+      adContainer.innerHTML = `<iframe src="https://twciptv.github.io/ad720x90.html?ts=${Date.now()}"  
+                                      frameborder="0" 
+                                      scrolling="no"></iframe>`;
+    }
+
+    // Initial load
+    loadAd();
+
+    // Reload ad every 30 seconds
+    setInterval(loadAd, 25000); // 30000 ms = 30 seconds
+  </script>
+	
     <div class="iframe-container">
   <iframe class="responsive-iframe" src="https://twciptv.github.io/iptvplayer.html?file=https://twciptv.github.io/Webtvmysg.m3u8"></iframe>
 </div>
@@ -240,40 +253,23 @@
       //]]>
       </script>
 
+ <div id="ad-container-asyn">
+    Loading ad...
+  </div>
 
-	<div id="ad-container">
- <script type="text/javascript">
-	atOptions = {
-		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
-</div>
-	<div id="ad-container">
- <script type="text/javascript">
-	atOptions = {
-		'key' : 'd4b3baf17d32fd8e3432453fbfbf085c',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/d4b3baf17d32fd8e3432453fbfbf085c/invoke.js"></script>
-</div>
-	
+  <script>
+    function loadAd() {
+      const adContainer = document.getElementById('ad-container-asyn');
 
-<script>
-  $(document).ready(function() {
-    setInterval(function() {
-      $("ad-container").load(location.href + " ad-container > *"); // Reloads content of #ad-container
-    }, 10000); // Refresh every 30 seconds
-  });
-</script>
+      const timestamp = new Date().toLocaleTimeString();
+      adContainer.innerHTML = `<iframe src="https://twciptv.github.io/ad-asyn.html?ts=${Date.now()}"  
+                                      frameborder="0" 
+                                      scrolling="no"></iframe>`;
+    }
+  
+    loadAd();
+    setInterval(loadAd, 25000); 
+  </script>
 
 </body>
 
