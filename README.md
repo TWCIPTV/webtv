@@ -1,3 +1,0 @@
-## Take a look: [📺Live Now](https://twciptv.github.io/webtv/)
-Only for educational purposes, Make your own...
-
