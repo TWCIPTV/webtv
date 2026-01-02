@@ -1,5 +1,5 @@
-const PLAYER_POSTER = "https://bugsfreecdn.netlify.app/BugsfreeDefault/player-poster.webp";
-const DEFAULT_LOGO = "https://bugsfreecdn.netlify.app/BugsfreeDefault/logo.png";
+const PLAYER_POSTER = "https://twciptv.github.io/webtv/img/twc.webp";
+const DEFAULT_LOGO = "https://twciptv.github.io/webtv/img/logo.png";
 
 // --- M3U Playlist Parser ---
 function parseM3U(content) {
@@ -906,3 +906,4 @@ document.addEventListener('keydown', (event) => {
         showPlayerNotification(`Volume: ${Math.round(newVolume * 100)}%`, 1500);
     }
 });
+
