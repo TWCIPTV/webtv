@@ -191,7 +191,7 @@ mouseActiveHandler();
 
 function updateSidebarFooter() {
     const year = new Date().getFullYear();
-    sidebarFooter.innerHTML = `&copy; ${year} Copyrights Bugsfree studio All rights reserved.`;
+    sidebarFooter.innerHTML = `&copy; ${year} Copyrights Tamilwebcast All rights reserved.`;
 }
 updateSidebarFooter();
 
@@ -906,4 +906,5 @@ document.addEventListener('keydown', (event) => {
         showPlayerNotification(`Volume: ${Math.round(newVolume * 100)}%`, 1500);
     }
 });
+
 
