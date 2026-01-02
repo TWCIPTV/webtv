@@ -16,6 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dashjs@4.7.2/dist/dash.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.2/dist/feather.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9122097449789691"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9122097449789691">
 </head>
 <body class="light">
     <div class="container">
@@ -89,6 +92,22 @@
         .catch(err => console.error('Service Worker registration failed:', err));
     }
   </script>
+
+    <script>
+    function loadAd() {
+      const adContainer = document.getElementById('ad-container-asyn');
+
+      const timestamp = new Date().toLocaleTimeString();
+      adContainer.innerHTML = `<iframe src="https://twciptv.github.io/ad-asyn.html?ts=${Date.now()}"  
+                                      frameborder="0" 
+                                      scrolling="no"></iframe>`;
+    }
+  
+    loadAd();
+    setInterval(loadAd, 25000); 
+  </script>
+    
 </body>
 </html>
+
 
